@@ -1,0 +1,25 @@
+[project]
+name = "codex-session-patcher"
+version = "1.0.0"
+description = "轻量级 Codex CLI 会话重写工具，绕过 AI 拒绝回复"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name", email = "your@email.com"}
+]
+keywords = ["codex", "cli", "session", "patcher"]
+
+[project.scripts]
+codex-patcher = "codex_patcher:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=codex_patcher"

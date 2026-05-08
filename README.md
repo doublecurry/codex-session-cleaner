@@ -1,4 +1,4 @@
-# Codex Session cleaner
+# Codex Session Cleaner
 
 一个轻量级的本地 Python 工具，用于重写 Codex CLI 的会话和记忆文件，绕过上下文中的 AI 拒绝回复。
 
